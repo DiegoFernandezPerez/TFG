@@ -1,0 +1,43 @@
+<div class="">
+    <h2 class="text-header">Reserva con nosotros</h2>
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-lg  mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" id="nameId"
+                    formControlName="name" required>
+            </div>
+            <div class="col-lg mb-3">
+                <label for="surname" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" placeholder="Apellidos" id="surnameId"
+                    formControlName="surname" required>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="Email" id="emailId"
+                formControlName="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Teléfono</label>
+            <input type="phone" class="form-control" placeholder="+34 971781000" id="tlfId"
+                formControlName="phone" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" placeholder="Escribe tu mensaje..." id="message" rows="5"
+                formControlName="message" required></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="privacity" formControlName="privacity"
+                required>
+            <label class="form-check-label" for="exampleCheck1">De acuerdo con la política de
+                privacidad.</label>
+        </div>
+        <div class="d-grid gap-2">
+            <button (click)="onSubmit()" type="button" class="btn btn-primary">ENVIAR MENSAJE</button>
+        </div>
+    </form>
+</div>
