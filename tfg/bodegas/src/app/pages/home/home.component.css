@@ -118,9 +118,7 @@
     }
 }
 @media (min-width: 993px) {
-    .margin-top-cb{
-        display: none !important;
-    }
+    
     .margin-top-cd{
         margin-top: 40px;
     }

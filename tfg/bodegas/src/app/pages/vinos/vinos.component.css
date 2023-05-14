@@ -1,0 +1,33 @@
+@media (min-width: 993px) {
+    .margin-bottom-c{
+        margin-bottom: 100px;
+    }
+    .img-top-phone{
+        display: none;
+    }
+    .img-top-tablet{
+        display: none;
+    }
+}
+@media (min-width:320px) and (max-width: 767px) {
+    .margin-bottom-c{
+        margin-bottom: 50px;
+    }
+    .img-top{
+        display: none;
+    }
+    .img-top-tablet{
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width: 992px) {
+    .margin-bottom-c{
+        margin-bottom: 80px;
+    }
+    .img-top{
+        display: none;
+    }
+    .img-top-phone{
+        display: none;
+    }
+}

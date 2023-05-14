@@ -18,6 +18,7 @@ import { ProductCardComponent } from './shared/product-card/product-card.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BannerComponent } from './shared/banner/banner.component';
 
 
 
@@ -35,7 +36,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CtaComponent,
     FactsComponent,
     SponsorsComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

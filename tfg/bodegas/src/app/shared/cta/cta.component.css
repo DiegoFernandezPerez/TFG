@@ -1,3 +1,7 @@
+.color-text {
+    color: white;
+    text-decoration: none;
+}
 .cta-container {
     display: flex;
     flex-direction: row;

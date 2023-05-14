@@ -34,7 +34,43 @@
 .img-top{
     width: 100%;
 }
-@media (max-width: 1250px){
+
+@media (min-width: 993px){
+    .show-text{
+        display: none;
+    }
+    .hide.text{
+        display: block;
+    }
+    .img-top{
+        display: block;
+        width: 100%;
+     }
+    .img-top-phone{
+        display: none;
+        
+    }
+    .img-top-tablet{
+        display: none;
+    }
+    .text-lugares-title{
+        font-family: 'PlusJakartaSans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000;   
+    }
+    .text-lugares-description{
+        font-family: 'PlusJakartaSans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000; 
+    }
+}
+@media (min-width:320px) and (max-width: 767px) {
     .hide-text{
         display: none;
     }
@@ -46,6 +82,9 @@
     .img-top-phone{
         display: block;
         width: 100%;
+    }
+    .img-top-tablet{
+        display: none;
     }
     .img-top{
         display: none;
@@ -62,7 +101,7 @@
         color: #000000;
     }
 }
-@media (min-width: 1250px){
+@media (min-width:768px) and (max-width: 992px) {
     .show-text{
         display: none;
     }
@@ -70,12 +109,17 @@
         display: block;
     }
     .img-top{
-        display: block;
+        display: none;
         width: 100%;
      }
     .img-top-phone{
         display: none;
+        
     }
+    .img-top-tablet{
+        display: block;
+        width: 100%;
+     }
     .text-lugares-title{
         font-family: 'PlusJakartaSans';
         font-style: normal;
