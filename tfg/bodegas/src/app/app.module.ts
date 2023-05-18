@@ -19,6 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './shared/banner/banner.component';
+import { HttpClientModule } from '@angular/common/http';
+import { WebService } from './shared/services/services';
+
 
 
 
@@ -45,9 +48,10 @@ import { BannerComponent } from './shared/banner/banner.component';
     MatExpansionModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WebService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
