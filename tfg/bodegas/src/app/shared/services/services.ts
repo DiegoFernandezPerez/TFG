@@ -16,9 +16,15 @@ export class WebService {
     // return this._http.get(URI);
   }
 
-  public getPrecio(): Observable<any> {
+  public getBlanco(): Observable<any> {
+    return this._http.get(this.apiUrl + '/rest/producto/productos')
+  } 
+  public getRosado(): Observable<any> {
     return this._http.get(this.apiUrl + '/rest/producto/productos')
   }  
+  public getTinto(): Observable<any> {
+    return this._http.get(this.apiUrl + '/rest/producto/productos')
+  }   
 
   
   

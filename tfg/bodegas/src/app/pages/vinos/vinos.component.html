@@ -7,20 +7,123 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid ">
+  <div class="row ">
     <div class="d-md-flex justify-content-evenly">
       <div class="d-md-flex px-3">
-        <app-product-card></app-product-card>
+        <div class="container-fluid div-size hide-size h-100">
+          <div class="row justify-content-center h-100 mb-4">
+              <div class="col-lg-4 card-group" style="width:fit-content">
+                  <div class="row">
+                      <div class="col p-0">
+                          <div class="card h-100">
+                              <div class="hide-img">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-top" alt="...">
+                              </div>
+                              <div class="hide-img-phone">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-phone w-100" alt="...">
+                              </div>
+                              <div class="hide-img-tablet">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-tablet w-100" alt="...">
+                              </div>
+                              <div class="card-body mt-5">
+                                  <h5 class="card-title">{{rosado.nombre}}</h5>
+                                  <p class="card-text">{{rosado.descripcion}}</p>
+                              </div>
+                              <div class="button-container d-flex flex-row-reverse col">
+                                  <div class="col-6 d-grid align-items-end">
+                                      <button type="button" class="btn btn-primary"><a class="color-text"
+                                              routerLink="/singleproduct-info">AÑADIR A LA CESTA</a></button>
+                                  </div>
+                                  <div class="col-6 d-grid">
+                                      <p class="desde p-0 m-0 ms-3">Desde</p>
+                                      <p class="price ms-3">{{rosado.precio}}€</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
       <div class="d-md-flex px-3">
-        <app-product-card></app-product-card>
+        <div class="container-fluid div-size hide-size h-100">
+          <div class="row justify-content-center h-100 mb-4">
+              <div class="col-lg-4 card-group" style="width:fit-content">
+                  <div class="row">
+                      <div class="col p-0">
+                          <div class="card h-100">
+                              <div class="hide-img">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-top" alt="...">
+                              </div>
+                              <div class="hide-img-phone">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-phone w-100" alt="...">
+                              </div>
+                              <div class="hide-img-tablet">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-tablet w-100" alt="...">
+                              </div>
+                              <div class="card-body mt-5">
+                                  <h5 class="card-title">{{tinto.nombre}}</h5>
+                                  <p class="card-text">{{tinto.descripcion}}</p>
+                              </div>
+                              <div class="button-container d-flex flex-row-reverse col">
+                                  <div class="col-6 d-grid align-items-end">
+                                      <button type="button" class="btn btn-primary"><a class="color-text"
+                                              routerLink="/singleproduct-info">AÑADIR A LA CESTA</a></button>
+                                  </div>
+                                  <div class="col-6 d-grid">
+                                      <p class="desde p-0 m-0 ms-3">Desde</p>
+                                      <p class="price ms-3">{{tinto.precio}}€</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
       <div class="d-md-flex px-3">
-        <app-product-card></app-product-card>
+        <div class="container-fluid div-size hide-size">
+          <div class="row justify-content-center h-100 mb-4">
+              <div class="col-lg-4 card-group" style="width:fit-content">
+                  <div class="row">
+                      <div class="col p-0">
+                          <div class="card h-100">
+                              <div class="hide-img">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-top" alt="...">
+                              </div>
+                              <div class="hide-img-phone">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-phone w-100" alt="...">
+                              </div>
+                              <div class="hide-img-tablet">
+                                  <img src="./assets/img/card/botellav.png" class="card-img-tablet w-100" alt="...">
+                              </div>
+                              <div class="card-body mt-5">
+                                  <h5 class="card-title">{{blanco.nombre}}</h5>
+                                  <p class="card-text">{{blanco.descripcion}}</p>
+                              </div>
+                              <div class="button-container d-flex flex-row-reverse col">
+                                  <div class="col-6 d-grid align-items-end">
+                                      <button type="button" class="btn btn-primary"><a class="color-text"
+                                              routerLink="/singleproduct-info">AÑADIR A LA CESTA</a></button>
+                                  </div>
+                                  <div class="col-6 d-grid">
+                                      <p class="desde p-0 m-0 ms-3">Desde</p>
+                                      <p class="price ms-3">{{blanco.precio}}€</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
     </div>
   </div>
+  <div class="mt-5"></div>
   <app-facts></app-facts>
   <app-sponsors></app-sponsors>
 </div>

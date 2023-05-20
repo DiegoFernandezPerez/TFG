@@ -8,7 +8,7 @@ import { WebService } from 'src/app/shared/services/services';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit{
 /* 
   experiencies:any;
   constructor(webService: WebService){
@@ -18,11 +18,15 @@ export class HomeComponent{
    console.log(this.experiencies);
   } */
 
-  localidades: any;
+  localidades: any; 
   constructor(webService: WebService){
-    webService.getProductos().subscribe((localidades:any)=>{
-      this.localidades = localidades['localidades'];
-    })
+    console.log(this.localidades);
+    webService.getProductos().subscribe((localidades:any)=>{ 
+      this.localidades = localidades['0']; console.log(this.localidades);
+    }) 
+    console.log(this.localidades);
+  }
+  ngOnInit(): void {
     console.log(this.localidades);
   }
   

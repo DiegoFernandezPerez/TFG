@@ -1,6 +1,6 @@
 <div class="container-fluid div-size hide-size">
     <div class="row justify-content-center gy-4 mb-4">
-        <div class="col-lg-4 card-group" style="width:fit-content" *ngFor="let card of [1]">
+        <div class="col-lg-4 card-group" style="width:fit-content">
             <div class="row">
                 <div class="col p-0">
                     <div class="card">
@@ -14,8 +14,8 @@
                             <img src="./assets/img/card/botellav.png" class="card-img-tablet w-100" alt="...">
                         </div>
                         <div class="card-body mt-5">
-                            <h5 class="card-title">Viaje en barco por la zona este de Tenerife de costa a costa</h5>
-                            <p class="card-text">Si quieres emociones fuertes prueba nuestra moto acúatica.</p>
+                            <h5 class="card-title">{{vinos.nombre}}</h5>
+                            <p class="card-text">{{vinos.descripcion}}</p>
                         </div>
                         <div class="button-container d-flex flex-row-reverse col">
                             <div class="col-6 d-grid align-items-end">
@@ -24,7 +24,7 @@
                             </div>
                             <div class="col-6 d-grid">
                                 <p class="desde p-0 m-0 ms-3">Desde</p>
-                                <p class="price ms-3">55,00€</p>
+                                <p class="price ms-3">{{vinos.precio}}€</p>
                             </div>
                         </div>
                     </div>
