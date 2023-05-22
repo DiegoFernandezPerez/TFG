@@ -12,9 +12,12 @@ export class WebService {
   constructor(private _http: HttpClient) { }
 
   public getProductos(): Observable<any> {
-    return this._http.get(this.apiUrl + '/rest/usuarios/localidades');
+    return this._http.get(this.apiUrl + '/compra/carrito');
     // return this._http.get(URI);
   }
+  public postProducto(producto:any): Observable<any> {
+    return this._http.post(this.apiUrl + `/compra/carrito/agregar?id_producto=${producto}`, null);
+  } 
 
   public getBlanco(): Observable<any> {
     return this._http.get(this.apiUrl + '/rest/producto/productos')

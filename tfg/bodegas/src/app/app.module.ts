@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './shared/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WebService } from './shared/services/services';
+import { CarritoComponent } from './pages/carrito/carrito.component';
 
 
 
@@ -40,7 +41,8 @@ import { WebService } from './shared/services/services';
     FactsComponent,
     SponsorsComponent,
     ProductCardComponent,
-    BannerComponent
+    BannerComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,

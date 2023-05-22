@@ -1,0 +1,36 @@
+<div style="margin:20px;padding:20px">
+    <ng-container *ngIf="productos.length > 0 ; else elseTemplate">
+        <div *ngFor="let producto of productos">
+            <h1>Productos del carrito</h1>
+            <br>
+            <table class="styled-table">
+                <tr>
+                    <th>ID PRODUCTO</th>
+                    <th>NOMBRE PRODUCTO</th>
+                    <th>PRECIO</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>
+                        {{producto.idProducto}}
+                    </td>
+                    <td>
+                        {{producto.nombre}}
+                    </td>
+                    <td>
+                        {{producto.precio}}
+                    </td>
+                    <td>
+                        {{producto.stock}}
+                    </td>
+                </tr>
+            </table><br><br>
+            <form action="/compra/verificar">
+                <input class="button" type="submit" value="Comprar">
+            </form>
+        </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <h2>El carrito esta vacio</h2>
+    </ng-template>
+</div>

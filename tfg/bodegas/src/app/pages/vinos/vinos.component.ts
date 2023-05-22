@@ -10,7 +10,7 @@ export class VinosComponent {
   rosado: any;
   tinto: any;
   blanco: any ;
-  constructor(webService: WebService){ console.log(this.blanco);
+  constructor(private readonly webService: WebService){ console.log(this.blanco);
     webService.getBlanco().subscribe((blanco:any)=>{
       this.blanco = blanco['1'];console.log(this.blanco);
     })
@@ -20,6 +20,11 @@ export class VinosComponent {
     webService.getTinto().subscribe((tinto:any)=>{
       this.tinto = tinto['2'];console.log(this.tinto);
     })
+    console.log(this.rosado);
   }
   
+  addProducto(producto:any){
+      this.webService.postProducto(producto).subscribe();
+  }
+
 }
